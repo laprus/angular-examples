@@ -1,0 +1,19 @@
+//INFO: file is entry point which all common styles, should be added after variables
+
+// css reset
+@import 'common/reset';
+
+// colors
+@import 'common/colors';
+
+// typography
+@import 'common/typography';
+
+//helpers
+@import 'common/helpers';
+@import 'common/layouts-page';
+
+
+//platform
+@import 'common/controls';
+@import 'common/components';

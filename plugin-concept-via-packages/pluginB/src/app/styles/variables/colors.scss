@@ -1,0 +1,136 @@
+/*----------------------------------------------------------------*/
+/*  Colors - experimental
+/*----------------------------------------------------------------*/
+
+@function disable-color($color){
+  @return rgba($color, 0.5);
+}
+
+// Palette
+$uip-color-gray-100: #F4FFF2;
+$uip-color-gray-200: #F9F9FC;
+$uip-color-gray-300: #E4E9F0;
+$uip-color-gray-400: #DFDFDF;
+$uip-color-gray-500: #AAADB2;
+$uip-color-gray-600: #797979;
+$uip-color-gray-700: #333F4A;
+$uip-color-gray-800: #2A3641;
+
+$uip-color-green: #24C504;
+$uip-color-green-light: #CAF5BF;
+
+$uip-color-blue-dark: #065ECB;
+$uip-color-blue: #0B78FF;
+
+$uip-color-orange: #FF9B0B;
+$uip-color-orange-dark: #F3950D;
+
+$uip-color-red: #ED1C24;
+$uip-color-red-light: #FCDBDC;
+
+$uip-color-white: #FFFFFF;
+
+
+// Product colors
+$uip-color-product: $uip-color-orange;
+$uip-color-product-hover: $uip-color-orange-dark;
+$uip-color-product-disabled: disable-color($uip-color-orange);
+
+// Base variables
+$uip-color-primary: $uip-color-blue;
+$uip-color-secondary: $uip-color-gray-600;
+$uip-color-tertiary: $uip-color-gray-200;
+
+// Shadow
+$uip-color-shadow: $uip-color-gray-500;
+
+// Validation colors
+$uip-color-validation-primary: $uip-color-red-light;
+
+
+
+/*----------------------------------------------------------------*/
+/*  Colors - deprcated
+/*----------------------------------------------------------------*/
+
+// Palette
+$color-gray-20: #f9f9fc;
+$color-gray-30: #F5F5F5;
+$color-gray-40: #EDEDF0;
+$color-gray-50: #DFDFDF;
+$color-gray-60: #D8DCE2;
+$color-gray-80: #e4e9f0;
+$color-gray-110: #d0d5db;
+$color-gray-220: #aaadb3;
+$color-gray-250: #a5a8ad;
+$color-gray-270: #A6AFB9;
+$color-gray-280: #9BA6B4;
+$color-gray-290: #ABABAB;
+$color-gray-300: #8c96a3;
+$color-gray-330: #818f9b;
+$color-gray-350: #818488;
+$color-gray-400: #707882;
+$color-gray-450: #626e79;
+$color-gray-700: #2a3641;
+$color-gray-900: #11171C;
+
+
+$color-blue: #0b78ff;
+$color-blue-dark: #1071e8;
+$color-blue-darker: #050e32;
+
+$color-green-lighter: #f4fff2;
+$color-green-light: #caf5bf;
+$color-green: #24c504;
+$color-green-dark: #0f9b12;
+
+$color-orange: #ff9b0b;
+$color-orange-dark: #f3950d;
+
+$color-red-light: #F68D91;
+$color-red: #ed1c24;
+$color-red-dark: #77080d;
+
+$color-white: #ffffff;
+
+// Product colors
+$color-product: $color-white;
+$color-product-hover: $color-white;
+$color-product-disabled: rgba($color-product, 0.5);
+
+// Base variables
+$color-primary: $color-blue;
+$color-secondary: $color-green;
+
+// Font colors
+$color-font-primary: $color-gray-700;
+$color-font-secondary: $color-white;
+$color-font-tertiary: $color-blue;
+
+$color-font-active-primary: $color-green;
+
+$color-font-disabled-primary: rgba($color-font-primary, 0.5);
+$color-font-disabled-secondary: rgba($color-font-secondary, 0.5);
+$color-font-disabled-tertiary: rgba($color-font-tertiary, 0.5);
+
+$color-font-label: $color-gray-220;
+$color-font-text-secondary: $color-gray-330;
+
+// Background colors
+$color-background-primary: $color-blue;
+$color-background-secondary: $color-white;
+$color-background-tertiary: $color-gray-80;
+
+$color-background-disabled-primary: rgba($color-background-primary, 0.5);
+$color-background-disable-secondary: rgba($color-background-secondary, 0.5);
+$color-background-disable-tertiary: rgba($color-background-tertiary, 0.5);
+
+// Shadow
+$color-shadow: rgba($color-blue-darker, 0.09);
+
+// Validation colors
+$color-font-validation-primary: $color-red;
+$color-font-validation-secondary: $color-red-dark;
+$color-background-validation-primary: $color-red-light;
+$color-background-validation-secondary: $color-white;
+

@@ -1,0 +1,15 @@
+<h1>Sample component</h1>
+
+<p>Navigation:
+  <a [routerLink]="['/']">Home</a>
+  <a [routerLink]="['/sampleA']">SampleA</a>
+  <a [routerLink]="['/sampleB']">SampleB</a>
+</p>
+
+<h3>Current Route:</h3>
+
+<router-outlet></router-outlet>
+
+<button (click)="onClick()">Add routing</button>
+
+<button (click)="onClickGetRouting()">Get routing</button>

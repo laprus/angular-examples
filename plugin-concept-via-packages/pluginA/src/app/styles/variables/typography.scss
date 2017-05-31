@@ -1,0 +1,239 @@
+/*----------------------------------------------------------------*/
+/*  Typography
+/*----------------------------------------------------------------*/
+
+/* Fonts */
+
+@font-face {
+  font-family: lato-regular;
+  src: url($font-path + 'lato/Lato-Regular.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: lato-bold;
+  src: url($font-path + 'lato/Lato-Bold.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: lato-black;
+  src: url($font-path + 'lato/Lato-Black.ttf') format('opentype');
+}
+
+// font family
+$uip-font-family-regular: lato-regular;
+$uip-font-family-black: lato-black;
+$uip-font-family-bold: lato-bold;
+
+// font colors
+$uip-font-color-primary: $uip-color-gray-800;
+$uip-font-color-secondary: $uip-color-gray-600;
+$uip-font-color-tertiary: $uip-color-blue;
+$uip-font-color-validation-primary: $uip-color-red;
+
+@mixin uip-font-page-title {
+  font-size: 36px;
+  font-family: $uip-font-family-regular;
+  color: $uip-font-color-primary;
+}
+
+@mixin uip-font-form-group {
+  font-size: 28px;
+  font-family: $uip-font-family-bold;
+  color: $uip-font-color-tertiary;
+}
+
+@mixin uip-font-quick-preview-title {
+  font-size: 21px;
+  font-family: $uip-font-family-regular;
+  color: $uip-font-color-primary;
+}
+
+@mixin uip-font-modal-text-message {
+  font-size: 21px;
+  font-family: $uip-font-family-black;
+  color: $uip-font-color-primary;
+}
+
+@mixin uip-font-quick-preview-group-title {
+  font-size: 18px;
+  font-family: $uip-font-family-bold;
+  color: $uip-font-color-tertiary;
+}
+
+@mixin uip-font-main-nav-active-link {
+  font-size: 18px;
+  font-family: $uip-font-family-regular;
+  color: $uip-color-white;
+}
+
+@mixin uip-font-wizard-active-link {
+  font-size: 18px;
+  font-family: $uip-font-family-regular;
+  color: $uip-color-white;
+}
+
+@mixin uip-font-product {
+  font-size: 18px;
+  font-family: $uip-font-family-bold;
+  color: $uip-color-white;
+}
+
+@mixin uip-font-wizard-nav-active {
+  font-size: 18px;
+  font-family: $uip-font-family-regular;
+  color: $uip-font-color-primary;
+}
+
+@mixin uip-font-wizard-nav-next-step {
+  font-size: 18px;
+  font-family: $uip-font-family-regular;
+  color: $uip-color-gray-500;
+}
+
+@mixin uip-font-wizard-nav-validation {
+  font-size: 18px;
+  font-family: $uip-font-family-regular;
+  color: $uip-font-color-validation-primary;
+}
+
+@mixin uip-font-body-text {
+  font-size: 18px;
+  font-family: $uip-font-family-bold;
+  color: $uip-font-color-primary;
+}
+
+@mixin uip-font-data-tables {
+  font-size: 18px;
+  font-family: $uip-font-family-bold;
+  color: $uip-font-color-primary;
+}
+
+@mixin uip-font-quick-preview {
+  font-size: 18px;
+  font-family: $uip-font-family-bold;
+  color: $uip-font-color-primary;
+}
+
+@mixin uip-font-secondary {
+  font-size: 13px;
+  font-family: $uip-font-family-regular;
+  color: $uip-font-color-secondary;
+}
+
+@mixin uip-font-comments {
+  font-size: 13px;
+  font-family: $uip-font-family-regular;
+  color: $uip-font-color-secondary;
+}
+
+@mixin uip-font-filters {
+  font-size: 13px;
+  font-family: $uip-font-family-regular;
+  color: $uip-font-color-secondary;
+}
+
+// FORMS TYPOGRAPHY
+@mixin uip-font-form-description {
+  font-size: 21px;
+  font-family: $uip-font-family-bold;
+  color: $uip-font-color-primary;
+}
+
+@mixin uip-font-input-placeholder {
+  font-size: 18px;
+  font-family: $uip-font-family-regular;
+  color: $uip-color-gray-500;
+}
+
+@mixin uip-font-input-txt {
+  font-size: 18px;
+  font-family: $uip-font-family-regular;
+  color: $uip-font-color-primary;
+}
+
+@mixin uip-font-radio {
+  font-size: 18px;
+  font-family: $uip-font-family-regular;
+  color: $uip-font-color-primary;
+}
+
+@mixin uip-font-checkboxes {
+  font-size: 18px;
+  font-family: $uip-font-family-regular;
+  color: $uip-font-color-primary;
+}
+
+@mixin uip-font-input-comments {
+  font-size: 13px;
+  font-family: $uip-font-family-regular;
+  color: $uip-color-blue;
+}
+
+@mixin uip-font-validation-error-message {
+  font-size: 13px;
+  font-family: $uip-font-family-regular;
+  color: $uip-font-color-validation-primary;
+}
+
+@mixin uip-font-form-labels {
+  font-size: 13px;
+  font-family: $uip-font-family-regular;
+  color: $uip-color-gray-500;
+}
+
+@mixin uip-font-form-labels-validation {
+  font-size: 13px;
+  font-family: $uip-font-family-regular;
+  color: $uip-font-color-validation-primary;
+}
+
+// FONTS INSIDE BUTTONS
+@mixin uip-font-button-gray {
+  font-size: 13px;
+  font-family: $uip-font-family-black;
+  text-transform: capitalize;
+  color: $uip-font-color-secondary;
+}
+
+@mixin uip-font-button-green {
+  font-size: 13px;
+  font-family: $uip-font-family-black;
+  text-transform: capitalize;
+  color: $uip-color-green;
+}
+
+@mixin uip-font-button-red {
+  font-size: 13px;
+  font-family: $uip-font-family-black;
+  text-transform: capitalize;
+  color: $uip-font-color-validation-primary;
+}
+
+@mixin uip-font-button-white {
+  font-size: 13px;
+  font-family: $uip-font-family-black;
+  text-transform: capitalize;
+  color: $uip-color-white;
+}
+
+/*
+DEPRICATED
+ */
+
+$font-lato-regular: lato-regular;
+$font-lato-bold: lato-black;
+$font-lato-medium: lato-bold;
+
+$control-font-medium: $font-lato-medium;
+$controls-font: $font-lato-regular;
+$controls-bold-font: $font-lato-bold;
+
+$font-size-base: 16px;
+
+body {
+  font-size: $font-size-base;
+  font-family: $controls-font;
+}
+
+
+

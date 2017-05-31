@@ -1,0 +1,11 @@
+//INFO: file is entry point which all variables, should be added before common
+
+@import 'variables/colors';
+@import 'variables/images';
+@import 'variables/typography';
+
+/* Transition times */
+$shortTransition: 100ms;
+$mediumTransition: 200ms;
+$longTransition: 300ms;
+$extraLongTransition: 500ms;

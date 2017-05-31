@@ -1,0 +1,101 @@
+
+.uip-font {
+  &-page-title {
+    @include uip-font-page-title;
+  }
+  &-form-group {
+    @include uip-font-form-group;
+  }
+  &-quick-preview-title {
+    @include uip-font-quick-preview-title;
+  }
+  &-modal-text-message {
+    @include uip-font-modal-text-message;
+  }
+  &-quick-preview-group-title {
+    @include uip-font-quick-preview-group-title;
+  }
+  &-main-nav-active-link {
+    @include uip-font-main-nav-active-link;
+  }
+  &-wizard-active-link {
+    @include uip-font-wizard-active-link;
+  }
+  &-product {
+    @include uip-font-product;
+  }
+  &-wizard-nav-active {
+    @include uip-font-wizard-nav-active;
+  }
+  &-wizard-nav-next-step {
+    @include uip-font-wizard-nav-next-step;
+  }
+  &-wizard-nav-validation {
+    @include uip-font-wizard-nav-validation;
+  }
+  &-body-text {
+    @include uip-font-body-text;
+  }
+  &-data-tables {
+    @include uip-font-data-tables;
+  }
+  &-quick-preview {
+    @include uip-font-quick-preview;
+  }
+  &-secondary {
+    @include uip-font-secondary;
+  }
+  &-comments {
+    @include uip-font-comments;
+  }
+  &-filters {
+    @include uip-font-filters;
+  }
+
+  // FORMS TYPOGRAPHY
+  &-form-description {
+    @include uip-font-form-description;
+  }
+  &-input-placeholder {
+    @include uip-font-input-placeholder;
+  }
+  &-input-txt {
+    @include uip-font-input-txt;
+  }
+  &-radio {
+    @include uip-font-radio;
+  }
+  &-checkboxes {
+    @include uip-font-checkboxes;
+  }
+  &-quick-preview-title {
+    @include uip-font-quick-preview-title;
+  }
+  &-input-comments {
+    @include uip-font-input-comments;
+  }
+  &-validation-error-message {
+    @include uip-font-validation-error-message;
+  }
+  &-form-labels {
+    @include uip-font-form-labels;
+  }
+  &-form-labels-validation {
+    @include uip-font-form-labels-validation;
+  }
+
+  // FONTS INSIDE BUTTONS
+  &-button-gray {
+    @include uip-font-button-gray;
+  }
+  &-button-green {
+    @include uip-font-button-green;
+  }
+  &-button-red {
+    @include uip-font-button-red;
+  }
+  &-button-white {
+    @include uip-font-button-white;
+  }
+
+}
