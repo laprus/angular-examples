@@ -6,6 +6,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { SampleService } from './sample.service';
 import { CommonModule } from '@angular/common';
 import { SampleRoutes } from './sample.routes';
+import { SampleAComponent, SampleAModule } from 'sampleA';
+import { SampleBComponent, SampleBModule } from 'sampleB';
 /**
  * Created by pawel.laprus on 2017-05-23.
  */
@@ -15,12 +17,14 @@ import { SampleRoutes } from './sample.routes';
   declarations: [
     SampleComponent,
     SampleDirective,
-    SamplePipe
+    SamplePipe,
   ],
   imports: [
     BrowserModule,
     CommonModule,
-    SampleRoutes
+    SampleRoutes,
+    SampleAModule,
+    SampleBModule
   ],
   providers: [],
   exports: [
