@@ -6,8 +6,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { SampleService } from './sample.service';
 import { CommonModule } from '@angular/common';
 import { SampleRoutes } from './sample.routes';
-import { SampleAComponent, SampleAModule } from 'sampleA';
-import { SampleBComponent, SampleBModule } from 'sampleB';
 /**
  * Created by pawel.laprus on 2017-05-23.
  */
@@ -22,9 +20,7 @@ import { SampleBComponent, SampleBModule } from 'sampleB';
   imports: [
     BrowserModule,
     CommonModule,
-    SampleRoutes,
-    SampleAModule,
-    SampleBModule
+    SampleRoutes
   ],
   providers: [],
   exports: [
