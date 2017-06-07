@@ -1,12 +1,12 @@
 {
-  "name": "rsw.template.uifornpm",
+  "name": "plugin-manager",
   "description": "This package is a template for creating npm packages in Diebold Nixdorf",
   "author": "Diebold Nixdorf",
   "version": "1.0.0",
   "license": "ISC",
-  "module": "rsw.template.uifornpm.es5.js",
-  "es2015": "rsw.template.uifornpm.js",
-  "typings": "rsw.template.uifornpm.d.ts",
+  "module": "plugin-manager.es5.js",
+  "es2015": "plugin-manager.js",
+  "typings": "plugin-manager.d.ts",
   "publishConfig": {
     "registry": "https://davis.wincor-nixdorf.com/n3/repository/npm.local/"
   },
@@ -14,7 +14,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng lint && ng test --single-run && npm run docs && gulp build",
+    "build:prod": "npm run docs && gulp build",
     "release": "npm run build:prod && npm run publishapp",
     "docs": "npm run docs:build",
     "docs:build": "compodoc -p tsconfig.json -n platform-library -d docs --hideGenerator",
@@ -38,11 +38,7 @@
     "@angular/platform-browser-dynamic": "4.0.2",
     "@angular/router": "4.0.2",
     "core-js": "^2.4.1",
-    "package-manager": "file:///C:\\GIT\\angular-examples\\plugin-concept-via-packages\\plugin-manager\\package-manager-1.0.0.tgz",
-    "plugin-manager": "file:///C:\\GIT\\angular-examples\\plugin-concept-via-packages\\plugin-manager\\plugin-manager-1.0.0.tgz",
     "rxjs": "^5.1.0",
-    "sampleA": "file:///C:\\GIT\\angular-examples\\plugin-concept-via-packages\\pluginA\\sampleA-1.0.0.tgz",
-    "sampleB": "file:///C:\\GIT\\angular-examples\\plugin-concept-via-packages\\pluginB\\sampleB-1.0.0.tgz",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {

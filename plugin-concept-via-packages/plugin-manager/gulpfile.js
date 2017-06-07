@@ -87,7 +87,7 @@ gulp.task('rollup:es', function () {
 
       // Bundle's entry point
       // See https://github.com/rollup/rollup/wiki/JavaScript-API#entry
-      entry: `${buildFolder}/sampleB.js`,
+      entry: `${buildFolder}/plugin-manager.js`,
 
       // A list of IDs of modules that should remain external to the bundle
       // See https://github.com/rollup/rollup/wiki/JavaScript-API#external
@@ -100,7 +100,7 @@ gulp.task('rollup:es', function () {
       // See https://github.com/rollup/rollup/wiki/JavaScript-API#format
       format: 'es'
     }))
-    .pipe(rename('sampleB.js'))
+    .pipe(rename('plugin-manager.js'))
     .pipe(gulp.dest(distFolder));
 });
 
@@ -115,7 +115,7 @@ gulp.task('rollup:umd', function () {
 
       // Bundle's entry point
       // See https://github.com/rollup/rollup/wiki/JavaScript-API#entry
-      entry: `${buildFolder}/sampleB.es5.js`,
+      entry: `${buildFolder}/plugin-manager.es5.js`,
 
       // A list of IDs of modules that should remain external to the bundle
       // See https://github.com/rollup/rollup/wiki/JavaScript-API#external
@@ -135,14 +135,14 @@ gulp.task('rollup:umd', function () {
       // The name to use for the module for UMD/IIFE bundles
       // (required for bundles with exports)
       // See https://github.com/rollup/rollup/wiki/JavaScript-API#modulename
-      moduleName: 'sampleB',
+      moduleName: 'plugin-manager',
 
       // See https://github.com/rollup/rollup/wiki/JavaScript-API#globals
       globals: {
         typescript: 'ts'
       }
     }))
-    .pipe(rename('sampleB.umd.js'))
+    .pipe(rename('plugin-manager.umd.js'))
     .pipe(gulp.dest(distFolder));
 });
 
@@ -157,7 +157,7 @@ gulp.task('rollup:es5', function () {
 
       // Bundle's entry point
       // See https://github.com/rollup/rollup/wiki/JavaScript-API#entry
-      entry: `${buildFolder}/sampleB.es5.js`,
+      entry: `${buildFolder}/plugin-manager.es5.js`,
 
       // A list of IDs of modules that should remain external to the bundle
       // See https://github.com/rollup/rollup/wiki/JavaScript-API#external
@@ -177,14 +177,14 @@ gulp.task('rollup:es5', function () {
       // The name to use for the module for UMD/IIFE bundles
       // (required for bundles with exports)
       // See https://github.com/rollup/rollup/wiki/JavaScript-API#modulename
-      moduleName: 'sampleB-es5',
+      moduleName: 'plugin-manager-es5',
 
       // See https://github.com/rollup/rollup/wiki/JavaScript-API#globals
       globals: {
         typescript: 'ts'
       }
     }))
-    .pipe(rename('sampleB.es5.js'))
+    .pipe(rename('plugin-manager.es5.js'))
     .pipe(gulp.dest(distFolder));
 });
 

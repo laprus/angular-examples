@@ -6,6 +6,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { SampleService } from './sample.service';
 import { CommonModule } from '@angular/common';
 import { SampleRoutes } from './sample.routes';
+import { SampleBComponent, SampleBModule } from 'sampleB';
+import { PluginManagerModule } from 'plugin-manager';
 /**
  * Created by pawel.laprus on 2017-05-23.
  */
@@ -20,7 +22,9 @@ import { SampleRoutes } from './sample.routes';
   imports: [
     BrowserModule,
     CommonModule,
-    SampleRoutes
+    SampleRoutes,
+    PluginManagerModule,
+    SampleBModule,
   ],
   providers: [],
   exports: [
@@ -28,7 +32,10 @@ import { SampleRoutes } from './sample.routes';
     SampleDirective,
     SamplePipe
   ],
-  bootstrap: [SampleComponent]
+  bootstrap: [SampleComponent],
+  entryComponents: [
+    SampleBComponent
+  ]
 })
 export class SampleModule {
   static forRoot(): ModuleWithProviders {
