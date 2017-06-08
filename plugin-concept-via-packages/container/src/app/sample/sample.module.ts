@@ -1,4 +1,4 @@
-import { ModuleWithProviders, NgModule } from '@angular/core';
+import { ModuleWithProviders, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { SampleComponent } from './sample.component';
 import { SampleDirective } from './sample.directive';
 import { SamplePipe } from './sample.pipe';
@@ -33,6 +33,7 @@ import { PluginManagerModule } from 'plugin-manager';
     SamplePipe
   ],
   bootstrap: [SampleComponent],
+  schemas: [NO_ERRORS_SCHEMA],
   entryComponents: [
     SampleBComponent
   ]

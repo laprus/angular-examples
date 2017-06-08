@@ -3,6 +3,8 @@ import { PluginData } from './plugin';
 import { Injectable } from '@angular/core';
 import { ReplaySubject } from 'rxjs/Rx';
 
+declare var System: any;
+
 @Injectable()
 export class PluginService {
 
@@ -13,20 +15,19 @@ export class PluginService {
     console.log('ctor plugin-service');
     this.plugins = [];
     this.change = new ReplaySubject(1);
-    this.loadPlugins();
+    this.loadPlugin();
   }
 
-  public loadPlugins(): void {
-    System.import('../../plugins.js').then((pluginsModule) => {
-      pluginsModule.default.forEach((pluginUrl) => this.loadPlugin(pluginUrl));
-    });
-  }
+  // public loadPlugins(): void {
+  //   System.import('../../plugins.js').then((pluginsModule) => {
+  //     pluginsModule.default.forEach((pluginUrl) => this.loadPlugin(pluginUrl));
+  //   });
+  // }
 
-  public loadPlugin(url: string): any {
-    return System.import('../../app/agile.ts').then((pluginModule) => {
+  public loadPlugin(): void {
+     System.import('../../app/agile.ts').then((pluginModule) => {
       const Plugin: any = pluginModule.default;
       const pluginData: any = {
-        url,
         type: Plugin,
         // reading the meta data previously stored by the @Plugin decorator
         config: Plugin._pluginConfig,
