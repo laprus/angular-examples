@@ -25,7 +25,7 @@ export class PluginService {
   // }
 
   public loadPlugin(): void {
-     System.import('../../app/agile.ts').then((pluginModule) => {
+     System.import('app/agile.ts').then((pluginModule) => {
       const Plugin: any = pluginModule.default;
       const pluginData: any = {
         type: Plugin,
