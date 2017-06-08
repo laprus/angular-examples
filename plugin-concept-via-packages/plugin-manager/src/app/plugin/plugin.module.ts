@@ -1,7 +1,7 @@
 /**
  * Created by pawel.laprus on 2017-06-07.
  */
-import { ModuleWithProviders, NgModule } from '@angular/core';
+import { ModuleWithProviders, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PluginSlotDirective } from './plugin-slot';
 import { PluginService } from './plugin-service';
@@ -21,6 +21,7 @@ import { PluginService } from './plugin-service';
   exports: [
     PluginSlotDirective
   ],
+  schemas: [NO_ERRORS_SCHEMA],
   providers: [PluginService]
 })
 export class PluginManagerModule {

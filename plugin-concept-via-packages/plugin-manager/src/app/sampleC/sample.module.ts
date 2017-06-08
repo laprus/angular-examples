@@ -1,4 +1,4 @@
-import { ModuleWithProviders, NgModule } from '@angular/core';
+import { ModuleWithProviders, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { SampleCComponent } from './sample.component';
 import { SampleCDirective } from './sample.directive';
 import { SampleCPipe } from './sample.pipe';
@@ -32,6 +32,8 @@ import { TestComponent } from './test.component';
     SampleCPipe,
     TestComponent
   ],
+  entryComponents: [TestComponent],
+  schemas: [NO_ERRORS_SCHEMA],
   bootstrap: [SampleCComponent]
 })
 export class SampleCModule {

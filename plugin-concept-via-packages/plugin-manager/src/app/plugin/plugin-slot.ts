@@ -13,8 +13,10 @@ import {
 } from '@angular/core';
 
 //noinspection TsLint
+//noinspection TsLint
 @Directive({
-  selector: '[uipPluginSlot]'
+  //noinspection TsLint
+  selector: 'ngc-plugin-slot'
 })
 export class PluginSlotDirective implements OnChanges, OnDestroy {
 

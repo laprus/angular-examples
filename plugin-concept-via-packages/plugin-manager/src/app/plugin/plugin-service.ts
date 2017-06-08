@@ -23,7 +23,7 @@ export class PluginService {
   }
 
   public loadPlugin(url: string): any {
-    return System.import('../../app/agile.js').then((pluginModule) => {
+    return System.import('../../app/agile.ts').then((pluginModule) => {
       const Plugin: any = pluginModule.default;
       const pluginData: any = {
         url,
